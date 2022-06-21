@@ -26,16 +26,7 @@ function Register() {
         );
         const json =  await response.json()
         if(!json.regSuccess){
-            // toast.error('User Already Exists!', {
-            //     position: "bottom-right",
-            //     theme: "dark",
-            //     autoClose: 2000,
-            //     hideProgressBar: false,
-            //     closeOnClick: true,
-            //     pauseOnHover: true,
-            //     draggable: true,
-            //     progress: undefined,
-            // });
+           
         }else{
             navigate('/');
         }
@@ -114,17 +105,7 @@ function Register() {
             </form>
           </div>
         </div>
-        {/* <ToastContainer
-          position="bottom-right"
-          autoClose={2000}
-          hideProgressBar={false}
-          newestOnTop
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        /> */}
+     
       </div>
     );
 }
