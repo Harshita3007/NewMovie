@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
-// const mongoose = require('mongoose');
-// const express 
-// import { toast, ToastContainer } from "react-toastify";
-
 function Login() {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   let navigate = useNavigate();
