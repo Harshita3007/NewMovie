@@ -28,16 +28,7 @@ function Login() {
       localStorage.setItem("token", json.authToken);
       navigate("/Dashboard");
     } else {
-      // toast.error("Wrong Credentials", {
-      //   position: "bottom-right",
-      //   theme: "dark",
-      //   autoClose: 2000,
-      //   hideProgressBar: false,
-      //   closeOnClick: true,
-      //   pauseOnHover: true,
-      //   draggable: true,
-      //   progress: undefined,
-      // });
+      
     }
   };
 
@@ -96,17 +87,7 @@ function Login() {
           </h3>
         </div>
       </div>
-      {/* <ToastContainer
-        position="bottom-right"
-        autoClose={2000}
-        hideProgressBar={false}
-        newestOnTop
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      /> */}
+      
     </div>
   );
 }
