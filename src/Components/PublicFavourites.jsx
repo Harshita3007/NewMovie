@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import { toast, ToastContainer } from "react-toastify";
 import MovieListInFvt from "./MovieListInFvt";
 import Navbar from "./Navbar";
 import { useParams } from "react-router-dom";
@@ -48,30 +47,11 @@ function PublicFavourites() {
               }
             );
             const newMovies = await response.json();
-            // toast.success('Deleted!', {
-            //     position: "bottom-right",
-            //     theme: "dark",
-            //     autoClose: 2000,
-            //     hideProgressBar: false,
-            //     closeOnClick: true,
-            //     pauseOnHover: true,
-            //     draggable: true,
-            //     progress: undefined,
-            // });
+         
             setMov(newMovies)
             
         } catch (error) {
-            // toast.error('Cannot Delete!', {
-            //     position: "bottom-right",
-            //     theme: "dark",
-            //     autoClose: 2000,
-            //     hideProgressBar: false,
-            //     closeOnClick: true,
-            //     pauseOnHover: true,
-            //     draggable: true,
-            //     progress: undefined,
-            // });
-            
+       
         }
 
 
@@ -85,18 +65,6 @@ function PublicFavourites() {
                 <MovieListInFvt movies={mov} handleFavClick={DeleteFromPublicFav} />
             </div>
 
-            
-            {/* <ToastContainer
-                position="bottom-right"
-                autoClose={2000}
-                hideProgressBar={false}
-                newestOnTop
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-            /> */}
         </div>
 
 
