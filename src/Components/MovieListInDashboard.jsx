@@ -1,7 +1,7 @@
 import React from "react";
 import AddToPrivate from "./AddToPrivate";
 import AddToPublic from "./AddToPublic";
-// import { toast, ToastContainer } from "react-toastify";
+
 
 function MovieListInDashboard(props) {
 
@@ -21,16 +21,7 @@ function MovieListInDashboard(props) {
             }),
           }
         );
-        // toast.success('Added To Public List', {
-        //     position: "bottom-right",
-        //     theme: "dark",
-        //     autoClose: 2000,
-        //     hideProgressBar: false,
-        //     closeOnClick: true,
-        //     pauseOnHover: true,
-        //     draggable: true,
-        //     progress: undefined,
-        // });
+       
     }
     const AddToPrivateFav = async (movie) => {
         
@@ -49,17 +40,6 @@ function MovieListInDashboard(props) {
             }),
           }
         );
-        
-        // toast.success('Added To Private List', {
-        //     position: "bottom-right",
-        //     theme: "dark",
-        //     autoClose: 2000,
-        //     hideProgressBar: false,
-        //     closeOnClick: true,
-        //     pauseOnHover: true,
-        //     draggable: true,
-        //     progress: undefined,
-        // });
     }
 
 
@@ -83,17 +63,7 @@ function MovieListInDashboard(props) {
                     </div>
                 </div>
             )}
-            {/* <ToastContainer
-                position="bottom-right"
-                autoClose={2000}
-                hideProgressBar={false}
-                newestOnTop
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-            /> */}
+           
         </>
     );
 }
