@@ -7,8 +7,8 @@ function Dashboard() {
   const [searchMovies, setSearchMovies] = useState("");
 
   const getMovieRequest = async (searchMovies) => {
-//     const url = "http://www.omdbapi.com/?s=" + searchMovies + "&apikey=bcc4762c";
-    const url = "https://www.omdbapi.com/?s=" + searchMovies + "&apikey=efb28e14";
+    const url = "https://www.omdbapi.com/?s=" + searchMovies + "&apikey=bcc4762c";
+   
     const response = await fetch(url);
     const responseJSON = await response.json();
 
